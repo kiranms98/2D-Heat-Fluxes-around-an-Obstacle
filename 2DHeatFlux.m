@@ -88,9 +88,6 @@ function [K_global]= AssembleStiffness(Connectivity, Coord,k)
     end
 end
 
-%WHY DO WE HAVE MORE ELEMENS THAN NODES?
-% SHOULD WE DO ABS(J) OR JUST TAKE J? DOES THE ORDER OF THE CONNECTIVITY
-% MATTER
  %%   Compute source matrix
  function [N_fct]= N(s,t)
     N_fct= [
